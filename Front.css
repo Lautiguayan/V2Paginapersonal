@@ -1,138 +1,88 @@
-* {
-  margin: 0;
-  padding: 0;
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 
-  box-sizing: border-box;
-}
+ body {
+   background-image: url(PNG.jpg);
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   font-family: 'Poppins', sans-serif;
+   padding: 20px;
+   overflow-x: hidden;
+ }
 
-body {
+ .mi-titulo,
+ .mi-parrafo {
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 7vw;
+   font-weight: bold;
+   text-align: center;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin-bottom: 10px;
+ }
 
-  background-image: url(PNG.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+ .mi-subparrafo {
+   color: rgb(0, 57, 214);
+   text-align: center;
+   font-size: 5vw;
+   margin: 20px auto;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
 
+ .contenedor {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   margin: 30px auto;
+ }
 
+ .GH,
+ .FB,
+ .IG {
+   padding: 15px 30px;
+   font-size: 16px;
+   border: none;
+   border-radius: 8px;
+   background-color: #007bff;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   box-shadow: 0 4px 6px rgb(0, 0, 0);
+   width: 80%;
+   max-width: 300px;
+ }
 
-  
-}
+ .GH:hover,
+ .FB:hover,
+ .IG:hover {
+   background-color: #15ff00;
+   transform: scale(1.05);
+ }
 
-/*Modificar el titulo de la pag*/
-.mi-titulo {
+ .Mifoto {
+   display: block;
+   margin: 40px auto;
+   width: 80%;
+   max-width: 300px;
+   border-radius: 20px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+   object-fit: contain;
+ }
 
-  color: rgba(255, 255, 255, 0.342);
-  font-size: 55px;
-  font-weight: bold;
-  text-align: center;
+ @media screen and (min-width: 768px) {
 
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   .mi-titulo,
+   .mi-parrafo {
+     font-size: 3rem;
+   }
 
-
-}
-
-/*Modificar el Subtitulo de la pag*/
-
-.mi-parrafo {
-  color: rgba(255, 255, 255, 0.342);
-  font-size: 55px;
-  font-weight: bold;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-
-
-
-
-
-
-.contenedor {
-  position: absolute;
-  top: 758px;
-  /* distancia desde arriba */
-  right: 152vh;
-  /* distancia desde la derecha */
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.botones {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-
-.mi-subparrafo {
-  position: absolute;
-  top: 655px;
-  left: 31vh;
-
-  margin-top: 50px;
-  color: rgb(0, 57, 214);
-  text-align: center;
-  font-size: 220%;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
-}
-
-
-
-.GH,
-.FB,
-.IG {
-  /* Elimina position y left */
-  padding: 15px 30px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgb(0, 0, 0);
-}
-
-.IG:hover {
-  background-color: #15ff00;
-  /* azul más oscuro al pasar el mouse */
-  transform: scale(1.05);
-  /* efecto de agrandarse */
-}
-
-.FB:hover {
-  background-color: #15ff00;
-  /* azul más oscuro al pasar el mouse */
-  transform: scale(1.05);
-  /* efecto de agrandarse */
-}
-
-.GH:hover {
-  background-color: #15ff00;
-  /* azul más oscuro al pasar el mouse */
-  transform: scale(1.05);
-  /* efecto de agrandarse */
-}
-
-
-.Mifoto {
-
-  position: absolute;
-  top: 77vh;
-  left: 1vh;
-
-  width: 300px;
-  height: auto;
-  border-radius: 70px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-
-
-}
+   .mi-subparrafo {
+     font-size: 2rem;
+   }
+ }
