@@ -24,7 +24,7 @@ let b3=document.querySelector(`.IG`);
 
 b3.addEventListener(`click`, function () {
 
-    window.location.href = `https://www.instagram.com/`;
+    window.location.href = `https://www.instagram.com/lautii_guayan/`;
 
 
 }
