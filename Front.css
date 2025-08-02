@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -12,17 +12,21 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+
+
+  
 }
 
 /*Modificar el titulo de la pag*/
 .mi-titulo {
 
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.342);
   font-size: 55px;
   font-weight: bold;
   text-align: center;
 
-  font-family: 'Lato', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 
 }
@@ -30,11 +34,11 @@ body {
 /*Modificar el Subtitulo de la pag*/
 
 .mi-parrafo {
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.342);
   font-size: 55px;
   font-weight: bold;
   text-align: center;
-  font-family: 'Lato', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
@@ -44,9 +48,11 @@ body {
 
 
 .contenedor {
-   position: absolute;
-  top: 771px;      /* distancia desde arriba */
-  right: 10px;    /* distancia desde la derecha */
+  position: absolute;
+  top: 758px;
+  /* distancia desde arriba */
+  right: 152vh;
+  /* distancia desde la derecha */
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -61,20 +67,23 @@ body {
 
 
 .mi-subparrafo {
-   position: absolute;
-   top: 65vh;
-   left: 185vh;
+  position: absolute;
+  top: 655px;
+  left: 31vh;
 
   margin-top: 50px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 57, 214);
   text-align: center;
   font-size: 220%;
-  font-family: cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
 }
 
 
 
-.GH, .FB, .IG {
+.GH,
+.FB,
+.IG {
   /* Elimina position y left */
   padding: 15px 30px;
   font-size: 16px;
@@ -94,15 +103,36 @@ body {
   transform: scale(1.05);
   /* efecto de agrandarse */
 }
+
 .FB:hover {
   background-color: #15ff00;
   /* azul más oscuro al pasar el mouse */
   transform: scale(1.05);
   /* efecto de agrandarse */
 }
+
 .GH:hover {
   background-color: #15ff00;
   /* azul más oscuro al pasar el mouse */
   transform: scale(1.05);
   /* efecto de agrandarse */
+}
+
+
+.Mifoto {
+
+  position: absolute;
+  top: 77vh;
+  left: 1vh;
+
+  width: 300px;
+  height: auto;
+  border-radius: 70px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+
+
 }
