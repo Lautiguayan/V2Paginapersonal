@@ -1,0 +1,73 @@
+JUSTIFY-CONTENT:CENTER; CENTRA LA IMAGEN ARRIBA
+ALIGN-ITEMS:CENTER; CENTRA DESDE EL MEDIO DE LA PANTALLA
+width: 37%; SELECCIONA DONDE UBICAR EL TEXTO
+PADDIN: ES EL TAMAÑO DEL CUADRO QUE CONTIENE VALOR
+tex-align:MUEVO EL TEXTO DE FORMA HORIZONTAL
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+Link sobre los usos en css
+
+
+Logo de ig
+div.logo {
+
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at 33% 100%,
+            #FEDA77 4%,
+            #F58529 30%,
+            #DD2A7B 62%,
+            #8134AF 85%);
+    border-radius: 25%;
+    position: relative;
+
+}
+
+
+div.logo:before {
+
+    content: '';
+    width: 130px;
+    height: 130px;
+    border: 10px solid white;
+    border-radius: 25%;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+
+
+div.logo:after {
+
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: 10px solid white;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+
+
+div.punto {
+
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 50px;
+    right: 50px;
+
+}

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+
+   box-sizing: border-box;
+}
+
+body {
+
+  background-image: url(PNG.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Modificar el titulo de la pag*/
+.mi-titulo {
+
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+
+  font-family: 'Lato', sans-serif;
+
+
+}
+
+/*Modificar el Subtitulo de la pag*/
+
+.mi-parrafo {
+  color: rgb(255, 255, 255);
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+
+
+
+
+.contenedor {
+   position: absolute;
+  top: 771px;      /* distancia desde arriba */
+  right: 10px;    /* distancia desde la derecha */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.mi-subparrafo {
+   position: absolute;
+   top: 65vh;
+   left: 185vh;
+
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 220%;
+  font-family: cursive;
+}
+
+
+
+.GH, .FB, .IG {
+  /* Elimina position y left */
+  padding: 15px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgb(0, 0, 0);
+}
+
+.IG:hover {
+  background-color: #15ff00;
+  /* azul más oscuro al pasar el mouse */
+  transform: scale(1.05);
+  /* efecto de agrandarse */
+}
+.FB:hover {
+  background-color: #15ff00;
+  /* azul más oscuro al pasar el mouse */
+  transform: scale(1.05);
+  /* efecto de agrandarse */
+}
+.GH:hover {
+  background-color: #15ff00;
+  /* azul más oscuro al pasar el mouse */
+  transform: scale(1.05);
+  /* efecto de agrandarse */
+}
